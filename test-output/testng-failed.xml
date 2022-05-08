@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="geico.qa.test.homeowners.HomeOwnersTest">
+      <class name="testPackage.TestSeleniumTestNG">
         <methods>
-          <include name="homeOwnerTest"/>
-          <include name="cleaningUp"/>
-          <include name="setUp"/>
+          <include name="testMethod"/>
         </methods>
-      </class> <!-- geico.qa.test.homeowners.HomeOwnersTest -->
+      </class> <!-- testPackage.TestSeleniumTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -12,12 +12,12 @@ public class MainPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "(//p[contains(text(),'Auto')])[1]")
-	WebElement autoElement;
+	@FindBy(xpath = "(//div[@class='zip-code-form'])[1]")
+	WebElement homeOwenersCheckbox;
 	
-	//WebElement autoElement = BaseClass.driver.findElement(By.xpath("(//p[contains(text(),'Auto')])[1]"));
+	//WebElement homeOwnersElement = BaseClass.driver.findElement(By.xpath("(//p[contains(text(),'Auto')])[1]"));
 	
-	public void clickHomeOwners(CommonActions commonActions) {
-		commonActions.click(autoElement);
+	public void clickHomeOwnersCheckBox(CommonActions commonActions) {
+		commonActions.click(homeOwenersCheckbox);
 	}
 }

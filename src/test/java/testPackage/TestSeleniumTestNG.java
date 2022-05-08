@@ -22,24 +22,24 @@ public class TestSeleniumTestNG {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		WebElement element = driver.findElement(By.xpath("//a[text()='Music']"));
+		WebElement element = driver.findElement(By.xpath("(//div[@class='zip-code-form'])[1]"));
+		element.sendKeys();
+		element = driver.findElement(By.xpath("(//div[@class='product-checkbox'])[1]"));
 		element.click();
-		element = driver.findElement(By.id("a-autoid-0-announce"));
-		element.click();
-		element = driver.findElement(By.tagName("h1"));
-		System.out.println("The title of the page is : " + element.getText());
-		String url = driver.getCurrentUrl();
-		System.out.println("Current URL : " + url);
-		String modifiedUrl = url.substring(0, url.indexOf("?"));
-		System.out.println(modifiedUrl);
-		Assert.assertEquals(modifiedUrl, "https://www.amazon.com/ap/signin");
+//		element = driver.findElement(By.tagName("h1"));
+//		System.out.println("The title of the page is : " + element.getText());
+//		String url = driver.getCurrentUrl();
+//		System.out.println("Current URL : " + url);
+//		String modifiedUrl = url.substring(0, url.indexOf("?"));
+//		System.out.println(modifiedUrl);
+//		Assert.assertEquals(modifiedUrl, "https://www.geico.com/ap/signin");
 	}
 	
 	@Test
 	public void anothertest() {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.amazon.com/");
+		driver.get("https://www.geico.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

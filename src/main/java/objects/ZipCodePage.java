@@ -13,9 +13,9 @@ public class ZipCodePage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "(//*[@name='ZipCode'])[1]")
+	@FindBy(xpath = "(//div[@class='zip-code-form'])[1]")
 	WebElement zipCodeInputElement;
-	@FindBy(xpath = "(//input[@name='qsButton'])[1]")
+	@FindBy(xpath = "(//div[@class='product-checkbox'])[1]")
 	WebElement getQuoteBtnElement;
 	
 	public void inputZipCode(CommonActions commonActions, String value) {

@@ -8,8 +8,8 @@ public class HomeOwnersTest extends BaseClass{
 
 	@Test
 	public void homeOwnerTest() {
-		mainPage.clickHomeOwners(commonActions);
 		zipCodePage.inputZipCode(commonActions,"14215");
+		mainPage.clickHomeOwnersCheckBox(commonActions);
 		zipCodePage.clickQuoteBtn(commonActions);
 		startPage.inputFirstName(commonActions, "John");
 		startPage.inputMiddleName(commonActions, 'H');
