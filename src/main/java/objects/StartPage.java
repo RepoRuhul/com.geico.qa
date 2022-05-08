@@ -12,7 +12,7 @@ public class StartPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(id="NameAndAddressEdit_embedded_questions_list_FirstName")
+	@FindBy(id="modal-trigger btn btn--primary btn--full-mobile")
 	WebElement firstNameInputElement;
 	@FindBy(id="NameAndAddressEdit_embedded_questions_list_MiddleInitial")
 	WebElement middleNameInputElement;

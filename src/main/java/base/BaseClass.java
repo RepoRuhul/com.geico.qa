@@ -33,7 +33,7 @@ public class BaseClass {
 	
 	@AfterMethod
 	public void cleaningUp() {
-		//driver.quit();
+		driver.quit();
 	}
 	
 	private void initClasses() {
