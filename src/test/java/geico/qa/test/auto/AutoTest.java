@@ -1,4 +1,4 @@
-package geico.qa.test.homeowners;
+package geico.qa.test.auto;
 
 import org.testng.annotations.Test;
 
@@ -9,7 +9,6 @@ public class AutoTest extends BaseClass{
 	@Test
 	public void autoTest() {
 		mainPage.clickHomeOwnersCheckBox(commonActions);
-		mainPage.clickQuoteBtn(commonActions);
 		startPage.inputFirstName(commonActions, "John");
 		startPage.inputMiddleName(commonActions, 'H');
 		startPage.inputLastName(commonActions, "Doe");

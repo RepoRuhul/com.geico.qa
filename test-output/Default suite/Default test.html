@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun May 08 19:51:45 EDT 2022</td>
+<td>Started on:</td><td>Mon May 09 10:27:14 EDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>13 seconds (13062 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10730 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,29 +75,31 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='geico.qa.test.homeowners.AutoTest.autoTest()'><b>autoTest</b><br>Test class: geico.qa.test.homeowners.AutoTest<br/>
-<a href="#Output-2259527" onClick='toggleBox("Output-2259527", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2259527" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2259527">
-Element is not found : [[ChromeDriver: chrome on WINDOWS (2d0dc35e2f39e50c6af08db44c3f39f3)] -> xpath: (//div[@class='zip-code-form'])[1]]
-element not interactable
+<td title='testPackage.TestSeleniumTestNG.testMethod()'><b>testMethod</b><br>Test class: testPackage.TestSeleniumTestNG</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=101.0.4951.54)
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'DESKTOP-UNKSSR0', ip: '192.168.1.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;DESKTOP-UNKSSR0&apos;, ip: &apos;192.168.1.161&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2d0dc35e2f39e50c6af08db44c3f39f3, sendKeysToElement {id=928f8f7a-89f0-41ca-a13d-8cbc486d40bb, value=[Ljava.lang.CharSequence;@25290bca}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\ruhul\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62770}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62770/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (2d0dc35e2f39e50c6af08db44c3f39f3)] -> xpath: (//div[@class='zip-code-form'])[1]]
-Session ID: 2d0dc35e2f39e50c6af08db44c3f39f3<br><br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.fail(Assert.java:115)
-	at commons.CommonActions.inputText(CommonActions.java:37)
-	at objects.ZipCodePage.inputZipCode(ZipCodePage.java:22)
-	at geico.qa.test.homeowners.AutoTest.autoTest(AutoTest.java:11)
+Command: [be4a948af5bb71c3341f29747ab062fb, sendKeysToElement {id=fe190467-18e1-4df6-9c2b-35de62af4338, value=[Ljava.lang.CharSequence;@d5556bf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\ruhul\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54834}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54834/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (be4a948af5bb71c3341f29747ab062fb)] -&gt; xpath: (//div[@class=&apos;zip-code-form&apos;])[1]]
+Session ID: be4a948af5bb71c3341f29747ab062fb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
+	at testPackage.TestSeleniumTestNG.testMethod(TestSeleniumTestNG.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -126,13 +128,31 @@ Session ID: 2d0dc35e2f39e50c6af08db44c3f39f3<br><br/>
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2259527", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2259527'><pre>java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.fail(Assert.java:115)
-	at commons.CommonActions.inputText(CommonActions.java:37)
-	at objects.ZipCodePage.inputZipCode(ZipCodePage.java:22)
-	at geico.qa.test.homeowners.AutoTest.autoTest(AutoTest.java:11)
+</pre></div><a href='#' onClick='toggleBox("stack-trace345060426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace345060426'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=101.0.4951.54)
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;DESKTOP-UNKSSR0&apos;, ip: &apos;192.168.1.161&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [be4a948af5bb71c3341f29747ab062fb, sendKeysToElement {id=fe190467-18e1-4df6-9c2b-35de62af4338, value=[Ljava.lang.CharSequence;@d5556bf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\ruhul\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54834}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54834/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (be4a948af5bb71c3341f29747ab062fb)] -&gt; xpath: (//div[@class=&apos;zip-code-form&apos;])[1]]
+Session ID: be4a948af5bb71c3341f29747ab062fb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
+	at testPackage.TestSeleniumTestNG.testMethod(TestSeleniumTestNG.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -162,8 +182,21 @@ Session ID: 2d0dc35e2f39e50c6af08db44c3f39f3<br><br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>geico.qa.test.homeowners.AutoTest@53ce1329</td></tr>
+<td>3</td>
+<td>testPackage.TestSeleniumTestNG@54bff557</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testPackage.TestSeleniumTestNG.anothertest()'><b>anothertest</b><br>Test class: testPackage.TestSeleniumTestNG</td>
+<td></td>
+<td>7</td>
+<td>testPackage.TestSeleniumTestNG@54bff557</td></tr>
 </table><p>
 </body>
 </html>

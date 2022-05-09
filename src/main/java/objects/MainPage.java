@@ -12,7 +12,7 @@ public class MainPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "(//div[@class='zip-code-form'])[1]")
+	@FindBy(xpath = "(//input[@class='zip-code-input'])[1]\"))")
 	WebElement zipCode;
 	@FindBy(xpath = "(//*[@name='ZipCode'])[1]")
 	WebElement zipCodeInputElement;

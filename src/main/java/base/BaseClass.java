@@ -10,7 +10,6 @@ import commons.CommonActions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import objects.MainPage;
 import objects.StartPage;
-import objects.ZipCodePage;
 
 public class BaseClass {
 
@@ -38,7 +37,6 @@ public class BaseClass {
 	private void initClasses() {
 		commonActions = new CommonActions();
 		mainPage = new MainPage(driver);
-		zipCodePage = new ZipCodePage(driver);
 		startPage = new StartPage(driver);
 	}
 	
