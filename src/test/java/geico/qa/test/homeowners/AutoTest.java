@@ -4,13 +4,12 @@ import org.testng.annotations.Test;
 
 import base.BaseClass;
 
-public class HomeOwnersTest extends BaseClass{
+public class AutoTest extends BaseClass{
 
 	@Test
-	public void homeOwnerTest() {
-		zipCodePage.inputZipCode(commonActions,"14215");
+	public void autoTest() {
 		mainPage.clickHomeOwnersCheckBox(commonActions);
-		zipCodePage.clickQuoteBtn(commonActions);
+		mainPage.clickQuoteBtn(commonActions);
 		startPage.inputFirstName(commonActions, "John");
 		startPage.inputMiddleName(commonActions, 'H');
 		startPage.inputLastName(commonActions, "Doe");

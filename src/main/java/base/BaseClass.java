@@ -17,7 +17,6 @@ public class BaseClass {
 	public static WebDriver driver;
 	protected MainPage mainPage;
 	protected CommonActions commonActions;
-	protected ZipCodePage zipCodePage;
 	protected StartPage startPage;
 	
 	@BeforeMethod
