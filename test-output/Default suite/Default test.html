@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 09 10:27:14 EDT 2022</td>
+<td>Started on:</td><td>Thu May 12 20:09:22 EDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>10 seconds (10730 ms)</td>
+<tr><td>Total time:</td><td>48 seconds (48028 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,31 +75,27 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testPackage.TestSeleniumTestNG.testMethod()'><b>testMethod</b><br>Test class: testPackage.TestSeleniumTestNG</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=101.0.4951.54)
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;DESKTOP-UNKSSR0&apos;, ip: &apos;192.168.1.161&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [be4a948af5bb71c3341f29747ab062fb, sendKeysToElement {id=fe190467-18e1-4df6-9c2b-35de62af4338, value=[Ljava.lang.CharSequence;@d5556bf}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\ruhul\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54834}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54834/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (be4a948af5bb71c3341f29747ab062fb)] -&gt; xpath: (//div[@class=&apos;zip-code-form&apos;])[1]]
-Session ID: be4a948af5bb71c3341f29747ab062fb
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
-	at testPackage.TestSeleniumTestNG.testMethod(TestSeleniumTestNG.java:26)
+<td title='geico.qa.test.auto.AutoTest.autoTest()'><b>autoTest</b><br>Test class: geico.qa.test.auto.AutoTest<br/>
+<a href="#Output-1208670252" onClick='toggleBox("Output-1208670252", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1208670252" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1208670252">
+14215 : value passed to element : [[ChromeDriver: chrome on WINDOWS (75137e444b5c1c7ba8600c2cbfb23db6)] -> xpath: (//input[@class='zip-code-input'])[1]]<br><br/>
+Element is Cliking : [[ChromeDriver: chrome on WINDOWS (75137e444b5c1c7ba8600c2cbfb23db6)] -> xpath: //input[@class='btn btn--secondary']]<br><br/>
+Element is Cliking : [[ChromeDriver: chrome on WINDOWS (75137e444b5c1c7ba8600c2cbfb23db6)] -> xpath: (//div[@class='product-checkbox'])[1]]<br><br/>
+Element is Cliking : [[ChromeDriver: chrome on WINDOWS (75137e444b5c1c7ba8600c2cbfb23db6)] -> xpath: //a[@class='modal-trigger btn btn--primary btn--full-mobile']]<br><br/>
+Element is Cliking : Proxy element for: DefaultElementLocator 'By.xpath: //input[@class='btn btn--primary btn--full-mobile']'<br><br/>
+10101990 : value passed to element : [[ChromeDriver: chrome on WINDOWS (75137e444b5c1c7ba8600c2cbfb23db6)] -> xpath: //input[starts-with(@id,'Id_GiveDateOfBirth')]]<br><br/>
+Element is unable to click: Proxy element for: DefaultElementLocator 'By.id: Id_GiveDateOfBirth_62515Button'
+Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: Id_GiveDateOfBirth_62515Button' (tried for 10 second(s) with 500 milliseconds interval)<br><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.fail(Assert.java:115)
+	at commons.CommonActions.click(CommonActions.java:25)
+	at objects.AboutYouPage.clickNextBtn(AboutYouPage.java:28)
+	at geico.qa.test.auto.AutoTest.autoTest(AutoTest.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -128,31 +124,13 @@ Session ID: be4a948af5bb71c3341f29747ab062fb
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace345060426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace345060426'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=101.0.4951.54)
-Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
-System info: host: &apos;DESKTOP-UNKSSR0&apos;, ip: &apos;192.168.1.161&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [be4a948af5bb71c3341f29747ab062fb, sendKeysToElement {id=fe190467-18e1-4df6-9c2b-35de62af4338, value=[Ljava.lang.CharSequence;@d5556bf}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\ruhul\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54834}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54834/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (be4a948af5bb71c3341f29747ab062fb)] -&gt; xpath: (//div[@class=&apos;zip-code-form&apos;])[1]]
-Session ID: be4a948af5bb71c3341f29747ab062fb
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
-	at testPackage.TestSeleniumTestNG.testMethod(TestSeleniumTestNG.java:26)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1208670252", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1208670252'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.fail(Assert.java:115)
+	at commons.CommonActions.click(CommonActions.java:25)
+	at objects.AboutYouPage.clickNextBtn(AboutYouPage.java:28)
+	at geico.qa.test.auto.AutoTest.autoTest(AutoTest.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -182,21 +160,8 @@ Session ID: be4a948af5bb71c3341f29747ab062fb
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>3</td>
-<td>testPackage.TestSeleniumTestNG@54bff557</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testPackage.TestSeleniumTestNG.anothertest()'><b>anothertest</b><br>Test class: testPackage.TestSeleniumTestNG</td>
-<td></td>
-<td>7</td>
-<td>testPackage.TestSeleniumTestNG@54bff557</td></tr>
+<td>43</td>
+<td>geico.qa.test.auto.AutoTest@53ce1329</td></tr>
 </table><p>
 </body>
 </html>

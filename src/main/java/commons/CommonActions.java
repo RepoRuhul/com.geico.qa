@@ -13,7 +13,7 @@ import base.BaseClass;
 public class CommonActions {
 
 	WebDriverWait wait = new WebDriverWait(BaseClass.driver, Duration.ofSeconds(10));
-	
+
 	public void click(WebElement element) {
 		try {
 			wait.until(ExpectedConditions.elementToBeClickable(element));
@@ -21,31 +21,31 @@ public class CommonActions {
 			Reporter.log("Element is Cliking : " + element + "<br>");
 		} catch (Exception e) {
 			e.printStackTrace();
-			Reporter.log("Element is unable to click: "+ element+"\n" + e.getMessage() + "<br>");
+			Reporter.log("Element is unable to click: " + element + "\n" + e.getMessage() + "<br>");
 			Assert.fail();
 		}
 	}
-	
+
 	public void inputText(WebElement element, String text) {
 		try {
 			wait.until(ExpectedConditions.visibilityOf(element));
 			element.sendKeys(text);
-			Reporter.log(text +" : value passed to element : " + element + "<br>");
+			Reporter.log(text + " : value passed to element : " + element + "<br>");
 		} catch (Exception e) {
 			e.printStackTrace();
-			Reporter.log("Element is not found : " + element+"\n" + e.getMessage() + "<br>");
+			Reporter.log("Element is not found : " + element + "\n" + e.getMessage() + "<br>");
 			Assert.fail();
 		}
 	}
-	
+
 	public void inputText(WebElement element, char text) {
 		try {
 			wait.until(ExpectedConditions.visibilityOf(element));
 			element.sendKeys(String.valueOf(text));
-			Reporter.log(text +" : value passed to element : " + element + "<br>");
+			Reporter.log(text + " : value passed to element : " + element + "<br>");
 		} catch (Exception e) {
 			e.printStackTrace();
-			Reporter.log("Element is not found : " + element+"\n" + e.getMessage() + "<br>");
+			Reporter.log("Element is not found : " + element + "\n" + e.getMessage() + "<br>");
 			Assert.fail();
 		}
 	}

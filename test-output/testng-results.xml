@@ -1,54 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[14215 : value passed to element : [[ChromeDriver: chrome on WINDOWS (75137e444b5c1c7ba8600c2cbfb23db6)] -> xpath: (//input[@class='zip-code-input'])[1]]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (75137e444b5c1c7ba8600c2cbfb23db6)] -> xpath: //input[@class='btn btn--secondary']]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (75137e444b5c1c7ba8600c2cbfb23db6)] -> xpath: (//div[@class='product-checkbox'])[1]]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (75137e444b5c1c7ba8600c2cbfb23db6)] -> xpath: //a[@class='modal-trigger btn btn--primary btn--full-mobile']]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Element is Cliking : Proxy element for: DefaultElementLocator 'By.xpath: //input[@class='btn btn--primary btn--full-mobile']'<br>]]>
+    </line>
+    <line>
+      <![CDATA[10101990 : value passed to element : [[ChromeDriver: chrome on WINDOWS (75137e444b5c1c7ba8600c2cbfb23db6)] -> xpath: //input[starts-with(@id,'Id_GiveDateOfBirth')]]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Element is unable to click: Proxy element for: DefaultElementLocator 'By.id: Id_GiveDateOfBirth_62515Button'
+Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: Id_GiveDateOfBirth_62515Button' (tried for 10 second(s) with 500 milliseconds interval)<br>]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-05-09T10:27:14 EDT" name="Default suite" finished-at="2022-05-09T10:27:25 EDT" duration-ms="10730">
+  <suite started-at="2022-05-12T20:09:22 EDT" name="Default suite" finished-at="2022-05-12T20:10:10 EDT" duration-ms="48028">
     <groups>
     </groups>
-    <test started-at="2022-05-09T10:27:14 EDT" name="Default test" finished-at="2022-05-09T10:27:25 EDT" duration-ms="10730">
-      <class name="testPackage.TestSeleniumTestNG">
-        <test-method signature="anothertest()[pri:0, instance:testPackage.TestSeleniumTestNG@54bff557]" started-at="2022-05-09T10:27:14 EDT" name="anothertest" finished-at="2022-05-09T10:27:21 EDT" duration-ms="7192" status="PASS">
+    <test started-at="2022-05-12T20:09:22 EDT" name="Default test" finished-at="2022-05-12T20:10:10 EDT" duration-ms="48028">
+      <class name="geico.qa.test.auto.AutoTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:geico.qa.test.auto.AutoTest@53ce1329]" started-at="2022-05-12T20:09:22 EDT" name="setUp" finished-at="2022-05-12T20:09:26 EDT" duration-ms="4473" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- anothertest -->
-        <test-method signature="testMethod()[pri:0, instance:testPackage.TestSeleniumTestNG@54bff557]" started-at="2022-05-09T10:27:21 EDT" name="testMethod" finished-at="2022-05-09T10:27:25 EDT" duration-ms="3481" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        </test-method> <!-- setUp -->
+        <test-method signature="autoTest()[pri:0, instance:geico.qa.test.auto.AutoTest@53ce1329]" started-at="2022-05-12T20:09:26 EDT" name="autoTest" finished-at="2022-05-12T20:10:10 EDT" duration-ms="43262" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=101.0.4951.54)
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'DESKTOP-UNKSSR0', ip: '192.168.1.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [be4a948af5bb71c3341f29747ab062fb, sendKeysToElement {id=fe190467-18e1-4df6-9c2b-35de62af4338, value=[Ljava.lang.CharSequence;@d5556bf}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\ruhul\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54834}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54834/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (be4a948af5bb71c3341f29747ab062fb)] -> xpath: (//div[@class='zip-code-form'])[1]]
-Session ID: be4a948af5bb71c3341f29747ab062fb]]>
+              <![CDATA[null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=101.0.4951.54)
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'DESKTOP-UNKSSR0', ip: '192.168.1.161', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [be4a948af5bb71c3341f29747ab062fb, sendKeysToElement {id=fe190467-18e1-4df6-9c2b-35de62af4338, value=[Ljava.lang.CharSequence;@d5556bf}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\ruhul\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54834}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54834/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (be4a948af5bb71c3341f29747ab062fb)] -> xpath: (//div[@class='zip-code-form'])[1]]
-Session ID: be4a948af5bb71c3341f29747ab062fb
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
-at testPackage.TestSeleniumTestNG.testMethod(TestSeleniumTestNG.java:26)
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.fail(Assert.java:115)
+at commons.CommonActions.click(CommonActions.java:25)
+at objects.AboutYouPage.clickNextBtn(AboutYouPage.java:28)
+at geico.qa.test.auto.AutoTest.autoTest(AutoTest.java:19)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -79,11 +75,37 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[14215 : value passed to element : [[ChromeDriver: chrome on WINDOWS (75137e444b5c1c7ba8600c2cbfb23db6)] -> xpath: (//input[@class='zip-code-input'])[1]]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (75137e444b5c1c7ba8600c2cbfb23db6)] -> xpath: //input[@class='btn btn--secondary']]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (75137e444b5c1c7ba8600c2cbfb23db6)] -> xpath: (//div[@class='product-checkbox'])[1]]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Element is Cliking : [[ChromeDriver: chrome on WINDOWS (75137e444b5c1c7ba8600c2cbfb23db6)] -> xpath: //a[@class='modal-trigger btn btn--primary btn--full-mobile']]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Element is Cliking : Proxy element for: DefaultElementLocator 'By.xpath: //input[@class='btn btn--primary btn--full-mobile']'<br>]]>
+            </line>
+            <line>
+              <![CDATA[10101990 : value passed to element : [[ChromeDriver: chrome on WINDOWS (75137e444b5c1c7ba8600c2cbfb23db6)] -> xpath: //input[starts-with(@id,'Id_GiveDateOfBirth')]]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Element is unable to click: Proxy element for: DefaultElementLocator 'By.id: Id_GiveDateOfBirth_62515Button'
+Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: Id_GiveDateOfBirth_62515Button' (tried for 10 second(s) with 500 milliseconds interval)<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- autoTest -->
+        <test-method is-config="true" signature="cleaningUp()[pri:0, instance:geico.qa.test.auto.AutoTest@53ce1329]" started-at="2022-05-12T20:10:10 EDT" name="cleaningUp" finished-at="2022-05-12T20:10:10 EDT" duration-ms="258" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod -->
-      </class> <!-- testPackage.TestSeleniumTestNG -->
+        </test-method> <!-- cleaningUp -->
+      </class> <!-- geico.qa.test.auto.AutoTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
