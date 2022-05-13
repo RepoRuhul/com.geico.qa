@@ -21,7 +21,7 @@ public class MainPage {
 	@FindBy(xpath = "(//div[@class='product-checkbox'])[1]")
 	WebElement autoCheckBoxElement;
 
-	@FindBy(xpath  = "//a[@class='modal-trigger btn btn--primary btn--full-mobile']")
+	@FindBy(xpath = "//a[@class='modal-trigger btn btn--primary btn--full-mobile']")
 	WebElement startMyCuoteBtnElement;
 
 	public void inputZipCode(CommonActions commonActions, String value) {

@@ -15,7 +15,6 @@ public class AutoTest extends BaseClass {
 		popUpPage.clickContinueBtn(commonActions);
 //		aboutYouPage.inputDOB(commonActions, "10/10/1990");
 		aboutYouPage.inputDOB(commonActions, "10101990");
-		
 		aboutYouPage.clickNextBtn(commonActions);
 		System.out.println("Lazy Debug");
 	}
